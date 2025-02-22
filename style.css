@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f8f9fa, #e3dff3);
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.btn {
+  background: #6c63ff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  height: 50vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0)
+    ),
+    url("gradient.png") no-repeat center;
+  background-size: cover;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.hero-images img {
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+/* Upcoming Events */
+.upcoming-events {
+  text-align: center;
+  padding: 50px;
+}
+
+.event-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.event-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Committees Section */
+.committees {
+  text-align: center;
+  padding: 50px;
+}
+
+.committees h2 {
+  margin-bottom: 10px; /* Add some spacing below the title */
+}
+
+.committees p {
+  margin-bottom: 40px; /* Increase spacing between text and cards */
+}
+
+/* Cards Container */
+.committee-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Cards */
+.committee-card {
+  position: relative; /* To make icons absolute inside */
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  width: 250px; /* Adjust card size */
+  height: 300px; /* Adjust height */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Default Card Styling */
+.committee-card {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+/* Hover Effect: Slight Scale Up + Shadow */
+.committee-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Hover Effect */
+.committee-card img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.committee-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Optional: Add a Glow Effect on Hover */
+.committee-card:hover {
+  border: 2px solid rgba(0, 123, 255, 0.5);
+}
+
+/* Icons Above Cards */
+.icon {
+  position: absolute;
+  top: -40px; /* Raised above card */
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+}
+
+.icon img {
+  width: 60px; /* Adjust icon size */
+  height: auto;
+  display: block;
+}
+
+/* Images inside Cards */
+.committee-card img {
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  padding: 50px;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ */
+.faq {
+  text-align: center;
+  padding: 50px;
+}
+
+.faq-item {
+  margin: 10px 0;
+}
+
+.faq-question {
+  width: 80%;
+  padding: 10px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
